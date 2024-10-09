@@ -7,54 +7,96 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css"/>
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
         <div class="border">
-            <nav class="navbar">
+            <header class="navbar">
                 <div class="navbar-spacing flex-container">
                     <div class="flex-container">
                         <div class="logo-symbol">☿</div>
                         <div class="logo-name">Mercurius</div>
                     </div>
-                    <div class="nav-links">
+                    <nav class="nav-links">
                         <a href="Subpages/Store/store.html">Products</a>
+                        <a href="Subpages/Blogs/blogs.html">Blogs</a>
                         <a href="Subpages/Guides/guides.html">Guides</a>
-                        <a href="Subpages/Contact/contact.html">Contact</a>
-                        <a href="Subpages/Showcase/showcase.html">Showcase</a>
-                    </div>
-                    <div class="external-links">
+                    </nav>
+                    <nav>
                         <a href="https://discord.com">
                             <img class="discord-logo" src="Assets/discord-icon.webp">
                         </a>
                         <a href="https://github.com/1mAgiN4ry/web-dev-assignment">
                             <img class="github-logo" src="Assets/github-icon.webp">
                         </a>
-                    </div>
+                    </nav>
                 </div>
-            </nav>
+            </header>
         </div>
         <div class="hero flex-container">
             <h1 class="hero-title">Mercurius</h1>
             <h2 class="hero-subtitle">Type at the speed of light</h2>
-            <img class="hero-img" src="Assets/hero-img.webp">
-            <div class="hero-button-border">
-                <button class="hero-button">Unleash Your Speed</button>
-            </div>
-        </div>
-        <div class="border">
-            <div class="content-container">
-                <div class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <br>
-                    Dolor molestias provident esse fugiat?
-                    <br>
-                    Sunt nobis eos fugiat natus sequi exercitationem amet eligendi tenetur error.
-                    <br>
-                    Obcaecati ipsum quasi id minus voluptatum.
+            <div class="flex-container">
+                <img class="hero-img" src="Assets/hero-img.webp">
+                <div class="hero-btn-pos">
+                    <div class="hero-button-border">
+                        <button class="hero-button">Unleash Your Speed</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="separator"></div>
+        <div class="content-container">
+            <div class="border">
+                <section class="content">
+                    <h1 class="section-title">About Mercurius:</h1>
+                    <p class="section-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dignissimos possimus cumque non quam vero voluptate aliquid magni
+                        quisquam autem, odio, atque iste accusantium accusamus quod similique.
+                        Vero facilis rerum neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit, aspernatur nihil?
+                        Dolor ipsa alias, recusandae voluptates officia dolorem?
+                        Est voluptatibus quia rem cum fugit dolor sed sint quae iusto odio.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde quis et magni veritatis debitis molestias sint atque voluptas
+                        nostrum blanditiis adipisci dolor expedita itaque earum soluta,
+                        excepturi ducimus tempora modi?
+                    </p>
+                </section>
+            </div>
+            <div class="guides-section">
+                <h1 class="alt-section-title">Popular guides:</h1>
+                <div class="flex-container guides-spacing">
+                    <div class="border">
+                        <div class="content"></div>
+                    </div>
+                    <div class="border">
+                        <div class="content"></div>
+                    </div>
+                    <div class="border">
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border">
+                <section class="content">
+                    <h1 class="section-title">Newest Blog:</h1>
+                    <div class="flex-container">
+                        <img src="https://picsum.photos/350/200">
+                        <div>
+                            <h2 class="smaller-section-title">Blog title</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="showcase section"></div>
+        </div>
+        <div class="separator"></div>
+        <footer></footer>
     </body>
 </html>
