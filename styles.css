@@ -120,7 +120,6 @@ body {
 .content-container {
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 5rem;
 }
 
 .content {
@@ -141,9 +140,7 @@ body {
   width: inherit;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin: 1rem;
-  margin-left: 4rem;
-  margin-right: 4rem;;
+  margin: 4rem;
 }
 
 .section-title {
@@ -173,4 +170,22 @@ body {
 
 .guides-spacing {
   justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.w-full {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.showcased-img {
+  margin: 1rem;
+  border-radius: 0.75rem;
+}
+
+.showcase {
+  margin: 1rem;
 }
