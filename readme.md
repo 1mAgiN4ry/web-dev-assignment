@@ -21,3 +21,6 @@ Inspiration:
 Ideas:
 - Console input and typing animation on hero title and subtitle
 - Apply a more Swiss design for a clean and minimal aesthetic
+
+Images used:
+- https://xn--gckvb8fzb.com/corne-v3/

@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mercurius</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
     </head>
@@ -20,9 +23,7 @@
                     <a class="underline" href="Subpages/Blogs/blogs.html">Blogs</a>
                 </div>
                 <div class="nav-item">
-                    <div>
-                        Socials
-                    </div>
+                    <a class="underline" href="Subpages/About/about.html">About</a>
                 </div>
             </nav>
             <div class="flex-container logo">
@@ -35,25 +36,57 @@
             <div class="hero flex-container">
                 <div class="hero-title">
                     <h1>
-                        Ergonomic Keyboards Designed
+                        <div class="hero-title-bold">Ergonomic Keyboards</div> <div class="hero-title-light">designed</div>
                         <br>
-                        for Comfort and Efficiency
+                        <div class="hero-title-light">for</div> <div class="hero-title-bold">Comfort</div> <div class="hero-title-light">and</div> <div class="hero-title-bold">Efficiency</div>
                     </h1>
                 </div>
                 <div class="img-container">
                     <img class="hero-img" src="Assets/hero-img.webp" alt="">
                     <div class="hero-btn-pos">
-                        <button class="hero-btn">Start typing</button>
+                        <a href="Subpages/Store/store.html">
+                            <button class="btn hero-btn">
+                                Start typing
+                            </button>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+        <section class="about-section">
+            <div class="flex-container">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, qui voluptatem ipsum corrupti consequuntur omnis ex quos commodi nostrum cupiditate quia temporibus.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et reiciendis rerum consequatur a reprehenderit aliquid!</p>
+                    <a href="Subpages/About/about.html">
+                        <button class="btn about-btn">Read more</button>
+                    </a>
+                </div>
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, qui voluptatem ipsum corrupti consequuntur omnis ex quos commodi nostrum cupiditate quia temporibus, recusandae et reiciendis rerum consequatur a reprehenderit aliquid!</p>
+                    <br>
+                    <img class="about-img" src="Assets/Showcased-kbs/corne-v3-kunai-raw-half.jpg" alt="">
                 </div>
             </div>
         </section>
         <div class="separator"></div>
         <!--
         <section></section>
-        <section></section>
         <div class="separator"></div>
-        <footer></footer>
         -->
+        <footer>
+            <div class="flex-container footer">
+                <nav class="flex-container">
+                    <div class="footer-item">Contact</div>
+                    <div class="footer-item">Privacy Policy</div>
+                    <div class="footer-item">Github</div>
+                </nav>
+                <div class="copyright">
+                    <div>© Mercurius - All Rights Reserved<div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
