@@ -1,131 +1,109 @@
-
-.discord-logo {
-  height: 1.75rem;
-  margin-right: 0.25rem;
+body {
+    color: #e6e6e6;
+    background-color: #1c1817;
+    font-family: 'JetBrains Mono', monospace;
 }
 
-.github-logo {
-  height: 1.8rem;
-  margin-left: 0.25rem;
+.flex-container {
+    display: flex;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    user-select: none;
+}
+
+.nav-item {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.underline::after {
+    content: '';
+    background-color: #e6e6e6;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 0.25rem;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.logo-symbol {
+  font-size: 1.75rem;
+  margin-right: 0.5rem;
+  transform: translateY(-0.25rem);
+}
+
+.logo-name {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.separator {
+    height: 2px;
+    background-color: rgba(230, 230, 230, 0.4);
+    margin: 1rem 5rem 1rem 5rem;
 }
 
 .hero {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-title {
-  color: #dbdbdb;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 8rem;
-  margin: 1rem;
-  user-select: none;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem;
 }
 
-.hero-subtitle {
-  color: #dbdbdb;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 2rem;
-  user-select: none;
+.img-container {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 11rem;
 }
 
 .hero-img {
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.hero-button-border {
-  background-color: #dbdbdb;
-  margin: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.75rem;
-  box-shadow: 0rem 0rem 1.25rem rgba(199, 107, 52, 0.65);
-}
-
-.hero-button {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 1rem;
-  background-color: #dbdbdb;
-  padding: 0.5rem;
-  border: #171313 solid 0.175rem;
-  border-radius: 0.5rem;
-}
-/*
-.hero-button:hover {
-  box-shadow: 0rem 0rem 0.2rem;
-}
-*/
-.hero-button-border:hover {
-  box-shadow: 0rem 0rem 1.75rem rgba(199, 107, 52, 1);
-}
-
-.hero-button:active {
-  box-shadow: inset 0rem 0rem 0.2rem rgba(0, 0, 0, 0.75);
-}
-
-
-.content-container {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.content {
-  background-color: #dbdbdb;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: #171313 solid 0.175rem;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .hero-btn-pos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.section-title {
-  font-size: 2rem;
-  font-family: "Noto Serif", serif;
-  margin-bottom: 0.5rem;
+.hero-btn {
+    font-size: 1.25rem;
+    font-family: "JetBrains Mono", monospace;
+    color: #ff791a;
+    background-color: #1c1817;
+    border: #ff791a solid 2px;
+    /*box-shadow: 0 0 1rem 0.25rem rgba(255, 121, 26, 0.5);*/
+    padding: 0.75rem;
+    transition: background-color 0.1s, color 0.1s, transform 0.2s ease;
 }
 
-.alt-section-title {
-  color: #dbdbdb;
-  font-size: 2rem;
-  font-family: "Noto Serif", serif;
+.hero-btn:hover {
+    color: #1c1817;
+    background-color: #ff791a;
+    transform: scale(1.05);
 }
 
-.smaller-section-title {
-  font-size: 1.75rem;
-  margin-left: 0.5rem;
-}
-
-.section-paragraph {
-  font-family: "Noto Serif", serif;
-}
-
-.guides-section {
-  margin: 1rem;
-}
-
-.guides-spacing {
-  justify-content: space-between;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
-.w-full {
-  width: 100%;
-  border-radius: 0.75rem;
-}
-
-.showcased-img {
-  margin: 1rem;
-  border-radius: 0.75rem;
-}
-
-.showcase {
-  margin: 1rem;
+.hero-btn:active {
+    color: #ff791a;
+    background-color: #1c1817;
 }

@@ -7,15 +7,17 @@ fonts:
 - Mono: JetBrains Mono
 
 Colour scheme:
-- Black: #171313
-- White: #dbdbdb
-- Orange: #c76b34
-- Blue: #3490c7
+- Black: #1c1817
+- White: #e6e6e6
+- Orange: #d95326
 
 Inspiration:
-- Nav bar: https://astro.build/
+- : https://astro.build/
 - : https://system76.com
 - : steam (by valve)
+- https://dribbble.com/shots/22149882-KAIZEN-Japanese-Restaurant-Landing-Page
+- https://www.apple.com/uk/
 
 Ideas:
 - Console input and typing animation on hero title and subtitle
+- Apply a more Swiss design for a clean and minimal aesthetic
