@@ -14,9 +14,12 @@ Colour scheme:
 Inspiration:
 - : https://astro.build/
 - : https://system76.com
-- : steam (by valve)
 - https://dribbble.com/shots/22149882-KAIZEN-Japanese-Restaurant-Landing-Page
 - https://www.apple.com/uk/
+- https://swissdesigncollective.shop/
+- https://www.swissted.com/
+- https://dribbble.com/shots/24584752-PetraTools-Website-Catalog-Page
+- https://mechboards.co.uk
 
 Ideas:
 - Console input and typing animation on hero title and subtitle

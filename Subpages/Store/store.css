@@ -1,0 +1,27 @@
+.products {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.product-info {
+    color: #1c1817;
+    background-color: #e6e6e6;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.product-img {
+    width: 100%;
+    margin: 0;
+}
+
+.product-underline {
+    height: 2px;
+    background-color: rgba(230, 230, 230, 0.4);
+    margin-top: 3rem;
+}
