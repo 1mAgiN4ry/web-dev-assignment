@@ -4,54 +4,72 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blogs</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../reset.css">
         <link rel="stylesheet" href="../../global.css">
         <link rel="stylesheet" href="blogs.css">
     </head>
     <body>
-        <header class="outer-border">
-            <nav class="inner-border">
-                <div class="flex-container navbar-spacing">
-                    <div id="logo" class="flex-container">
-                        <div class="logo-symbol">☿</div>
-                        <div class="logo-name">Mercurius</div>
-                    </div>
-                    <div class="nav-links">
-                        <a href="Subpages/Store/store.html">Products</a>
-                        <a href="Subpages/Blogs/blogs.html">Blogs</a>
-                        <a class="current-page" href="Subpages/Guides/guides.html">Guides</a>
-                    </div>
-                    <input class="nav-search" type="search" placeholder="Search guides">
+        <header class="flex-container navbar">
+            <nav class="flex-container">
+                <div class="nav-item">
+                    <a class="underline" href="../Store/store.html">Products</a>
+                </div>
+                <div class="nav-item">
+                    <a class="underline" href="../Guides/guides.html">Guides</a>
+                </div>
+                <div class="nav-item">
+                    <a class="underline" href="../Blogs/blogs.html">Blogs</a>
+                </div>
+                <div class="nav-item">
+                    <a class="underline" href="../About/about.html">About</a>
                 </div>
             </nav>
+            <div class="logo">
+                <a class="flex-container" href="../../index.html">
+                    <div class="logo-symbol">☿</div>
+                    <div class="logo-name">Mercurius</div>
+                </a>
+            </div>
         </header>
         <div class="separator"></div>
-        <section class="posts-section">
-            <div class="outer-border">
-                <div class="inner-border">
-                    <div class="flex-container">
-                        <img class="box-art" src="https://picsum.photos/450/250">
-                        <div class="flex-container vertical-center info-spacing">
-                            <h2 class="guide-date info-spacing">Day, Month 00, 0000<h2>
-                            <h1 class="guide-title info-spacing">
-                                Long post title for a more accurate representation
-                            </h1>
-                            <p class="description info-spacing">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque pariatur quia minus eaque voluptatibus.
-                            </p>
-                        </div>
+        <div class="flex-container subpage-title">
+            <h1>Blogs</h1>
+        </div>
+        <div class="separator"></div>
+        <section class="flex-container blogs">
+            <div class="blog-card">
+                <div class="flex-container">
+                    <a class="box-art" href="">
+                        <img class="box-art" src="https://picsum.photos/600/350" alt="">
+                    </a>
+                    <div class=" flex-container blog-info">
+                        <h2 class="blog-date">Date</h2>
+                        <a href="">
+                            <h1 class="blog-title">Descriptive title for the blog article</h1>
+                        </a>
+                        <h2 class="blog-desc">One sentence description of the blog so the reader has some idea of what it is about</h2>
                     </div>
                 </div>
+                <div class="blog-underline"></div>
             </div>
         </section>
         <div class="separator"></div>
-        <footer class="outer-border">
-            <div class="inner-border">
-
+        <footer>
+            <div class="flex-container footer">
+                <nav class="flex-container">
+                    <div class="footer-item">
+                        <a href="../Contact/contact.html">Contact</a>
+                    </div>
+                    <div class="footer-item">
+                        <a href="../Privacy-policy/privacy.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer-item">
+                        <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
+                    </div>
+                </nav>
+                <div class="copyright">
+                    <div>© Mercurius - All Rights Reserved<div>
+                </div>
             </div>
         </footer>
     </body>
