@@ -20,6 +20,7 @@ Inspiration:
 - https://www.swissted.com/
 - https://dribbble.com/shots/24584752-PetraTools-Website-Catalog-Page
 - https://mechboards.co.uk
+- https://www.jetbrains.com/lp/mono/
 
 Ideas:
 - Console input and typing animation on hero title and subtitle
