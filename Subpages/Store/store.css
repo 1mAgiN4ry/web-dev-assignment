@@ -31,12 +31,9 @@ input {
     margin-bottom: 2rem;
 }
 
-.input-spacing {
+.input-separator {
     width: 100%;
     padding: 1rem;
-}
-
-.vertical-separator {
     border-right: #e6e6e666 solid 1px ;
     border-left: #e6e6e666 solid 1px ;
 }
