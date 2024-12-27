@@ -33,3 +33,11 @@ Inspiration:
 Ideas:
 - Console input and typing animation on hero title and subtitle
 - Apply a more Swiss design for a clean and minimal aesthetic
+
+Pages:
+- Landing
+- Product
+- Product Detail
+- Checkout
+- Contact
+- Blogs
