@@ -1,3 +1,135 @@
+
+body {
+    color: #e6e6e6;
+    background-color: #1c1817;
+    font-family: "Inter", sans-serif;
+}
+
+::selection {
+	background-color: #ff791a;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.separator {
+    height: 2px;
+    background-color: /*rgba(28, 24, 23, 0.4)*/ rgba(230, 230, 230, 0.4);
+}
+
+/* Navigation bar */
+.navbar {
+    justify-content: space-between;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.logo-container {
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.underline::after {
+    content: '';
+    background-color: #e6e6e6;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 0.5rem;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+}
+
+.dropdown-container {
+    height: 100%;
+}
+
+.dropdown-btn {
+    height: 100%;
+}
+
+/*-Responsive functions-------------------*/
+/* Mobile */
+@media (min-width: 640px), (max-width: 640px) {
+    .navbar {
+        height: 2rem;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .dropdown-container {
+        display: inline-flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .separator {
+        margin: 1rem 3rem 1rem 3rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 960px ) {
+    .navbar {
+        height: 2.5rem;
+        font-size: 2.5rem;
+        margin: 1.5rem;
+    }
+
+    .dropdown-container {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline-flex;
+    }
+
+    .nav-item {
+        margin-left: 2rem;
+        margin-left: 2rem;
+    }
+
+    .separator {
+        margin: 1rem 4rem 1rem 4rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    .navbar {
+        height: 3rem;
+        font-size: 3rem;
+        margin: 2rem;
+    }
+
+    .dropdown-container {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline-flex;
+    }
+
+    .nav-item {
+        margin-left: 3rem;
+        margin-left: 3rem;
+    }
+
+    .separator {
+        margin: 1rem 5rem 1rem 5rem;
+    }
+}
+
+/*
 body {
     color: #e6e6e6;
     background-color: #1c1817;
@@ -109,3 +241,4 @@ body {
     justify-content: center;
     user-select: none;
 }
+*/

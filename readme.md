@@ -21,6 +21,7 @@ Inspiration:
 - https://dribbble.com/shots/24584752-PetraTools-Website-Catalog-Page
 - https://mechboards.co.uk
 - https://www.jetbrains.com/lp/mono/
+- https://www.bequiet.com/en
 
 - https://shop.keyboard.io/
 - https://kinesis-ergo.com/
