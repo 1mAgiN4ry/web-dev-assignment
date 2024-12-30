@@ -3,73 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blogs</title>
-        <link rel="stylesheet" href="../../reset.css">
-        <link rel="stylesheet" href="../../global.css">
-        <link rel="stylesheet" href="blogs.css">
+
+        <!-- Tab decoration -->
+        <title>Mercurius Keyboards</title>
+        <link rel="shortcut icon" href="../assets/mercurius-favicon.png" type="image/x-icon">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../style/reset.css">
+        <link rel="stylesheet" href="../style/global.css">
+
+        <!-- Embedded styles -->
+        <style>
+
+        </style>
     </head>
-    <body>
-        <header class="flex-container navbar">
-            <nav class="flex-container">
-                <div class="nav-item">
-                    <a class="underline" href="../Store/store.html">Products</a>
+    <body class="darkmode">
+        <header>
+            <div class="navbar">
+                <div class=" flex-container logo-container" style="float: left;">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/logo-darkmode.webp" alt="Logo of the website">
+                    </a>
+                    <div class="v-separator"></div>
+                    <button class="light-dark-toggle">
+                        <img src="../assets/moon.webp" alt="Moon icon denoting dark mode">
+                        <img src="../assets/sun.webp" alt="Sun icon denoting light mode">
+                    </button>
                 </div>
-                <div class="nav-item">
-                    <a class="underline" href="../Guides/guides.html">Guides</a>
+                <nav class="flex-container nav-menu" style="float: right;">
+                    <a class="underline nav-item" href="store.html">Products</a>
+                    <a class="underline nav-item" href="about.html">About</a>
+                    <a class="underline nav-item" href="blogs.html">Blog</a>
+                </nav>
+                <div class="dropdown-container" style="float: right;">
+                    <button class="dropdown-btn">
+                        <img class="dropdown-btn-img" src="../assets/hamburger-darkmode.webp" alt="Dropdown menu button">
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="store.html">Products</a>
+                        <a href="about.html">About</a>
+                        <a href="blogs.html">Blog</a>
+                    </div>
                 </div>
-                <div class="nav-item">
-                    <a class="underline" href="../Blogs/blogs.html">Blogs</a>
-                </div>
-                <div class="nav-item">
-                    <a class="underline" href="../About/about.html">About</a>
-                </div>
-            </nav>
-            <div class="logo">
-                <a class="flex-container" href="../../index.html">
-                    <div class="logo-symbol">☿</div>
-                    <div class="logo-name">Mercurius</div>
-                </a>
             </div>
         </header>
         <div class="separator"></div>
-        <div class="flex-container subpage-title">
-            <h1>Blogs</h1>
-        </div>
+        <main>
+
+        </main>
         <div class="separator"></div>
-        <section class="flex-container blogs">
-            <div class="blog-card">
-                <div class="flex-container">
-                    <a class="box-art" href="">
-                        <img class="box-art" src="https://picsum.photos/600/350" alt="">
-                    </a>
-                    <div class=" flex-container blog-info">
-                        <h2 class="blog-date">Date</h2>
-                        <a href="">
-                            <h1 class="blog-title">Descriptive title for the blog article</h1>
-                        </a>
-                        <h2 class="blog-desc">One sentence description of the blog so the reader has some idea of what it is about</h2>
-                    </div>
-                </div>
-                <div class="blog-underline"></div>
-            </div>
-        </section>
-        <div class="separator"></div>
-        <footer>
-            <div class="flex-container footer">
-                <nav class="flex-container">
-                    <div class="footer-item">
-                        <a href="../Contact/contact.html">Contact</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="../Privacy-policy/privacy.html">Privacy Policy</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
-                    </div>
-                </nav>
-                <div class="copyright">
-                    <div>© Mercurius - All Rights Reserved<div>
-                </div>
+        <footer class="footer flex-container">
+            <span class="footer-logo">©Mercurius Keyboards</span>
+            <div class="footer-info">
+                <a href="mailto:focc1_24@uni.worc.ac.uk">Contact</a>
+                <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
             </div>
         </footer>
     </body>

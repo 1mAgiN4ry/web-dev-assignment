@@ -152,6 +152,11 @@ body {
     font-size: 1.25rem;
 }
 
+.footer-info * {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 /*-Responsive-functions-------------------*/
 /* Mobile */
 @media (min-width: 640px), (max-width: 640px) {
@@ -238,9 +243,5 @@ body {
     .paragraph {
         font-size: 1.5rem;
         margin: 1.5rem;
-    }
-
-    .footer {
-        
     }
 }
