@@ -17,30 +17,35 @@
         <!-- Styles -->
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
 
         <!-- Embedded styles -->
         <style>
 
         </style>
     </head>
-    <body>
+    <body class="darkmode">
         <header>
-            <div class="flex-container navbar">
-                <div class=" flex-container logo-container">
+            <div class="navbar">
+                <div class=" flex-container logo-container" style="float: left;">
                     <a href="index.html">
                         <img class="logo" src="assets/logo-darkmode.webp" alt="Logo of the website">
                     </a>
-                    <div class="theme-toggle">
-                        <input type="checkbox" name="theme-toggle" id="">
-                    </div>
+                    <div class="v-separator"></div>
+                    <button class="light-dark-toggle">
+                        <img src="assets/moon.webp" alt="Moon icon denoting dark mode">
+                        <img src="assets/sun.webp" alt="Sun icon denoting light mode">
+                    </button>
                 </div>
-                <nav class="flex-container nav-menu">
+                <nav class="flex-container nav-menu" style="float: right;">
                     <a class="underline nav-item" href="pages/store.html">Products</a>
                     <a class="underline nav-item" href="pages/about.html">About</a>
                     <a class="underline nav-item" href="pages/blogs.html">Blog</a>
                 </nav>
-                <div class="dropdown-container">
-                    <img class="dropdown-btn" src="assets/hamburger-darkmode.webp" alt="Dropdown menu button">
+                <div class="dropdown-container" style="float: right;">
+                    <button class="dropdown-btn">
+                        <img class="dropdown-btn-img" src="assets/hamburger-darkmode.webp" alt="Dropdown menu button">
+                    </button>
                     <div class="dropdown-menu">
                         <a href="pages/store.html">Products</a>
                         <a href="pages/about.html">About</a>
@@ -51,91 +56,66 @@
         </header>
         <div class="separator"></div>
         <main>
-            <section></section>
-            <section></section>
-            <section></section>
-        </main>
-        <footer></footer>
-        <!--
-        <header class="flex-container navbar">
-            <nav class="flex-container">
-                <div class="nav-item">
-                    <a class="underline" href="Subpages/Store/store.html">Products</a>
+            <section class="hero">
+                <h1 class="hero-title">
+                    <span class="hero-title-bold">Ergonomic Keyboards</span> <span class="hero-title-thin">designed</span>
+                    <br>
+                    <span class="hero-title-thin">for</span> <span class="hero-title-bold">Comfort</span> <span class="hero-title-thin">and</span> <span class="hero-title-bold">Efficiency</span>
+                </h1>
+                <div class="flex-container cta">
+                    <img class="hero-img" src="assets/hero-kbd-left.webp" alt="Left hand of corne keyboard">
+                    <a href="pages/store.html">
+                        <button class="btn hero-btn">
+                            Start typing
+                        </button>
+                    </a>
+                    <img class="hero-img" src="assets/hero-kbd-right.webp" alt="Right hand of corne keyboard">
                 </div>
-                <div class="nav-item">
-                    <a class="underline" href="Subpages/Guides/guides.html">Guides</a>
-                </div>
-                <div class="nav-item">
-                    <a class="underline" href="Subpages/Blogs/blogs.html">Blogs</a>
-                </div>
-                <div class="nav-item">
-                    <a class="underline" href="Subpages/About/about.html">About</a>
-                </div>
-            </nav>
-            <div class="flex-container logo">
-                <div class="logo-symbol">☿</div>
-                <div class="logo-name">Mercurius</div>
-            </div>
-        </header>
-        <div class="separator"></div>
-        <section>
-            <div class="hero flex-container">
-                <div class="hero-title">
-                    <h1>
-                        <div class="hero-title-bold">Ergonomic Keyboards</div> <div class="hero-title-light">designed</div>
-                        <br>
-                        <div class="hero-title-light">for</div> <div class="hero-title-bold">Comfort</div> <div class="hero-title-light">and</div> <div class="hero-title-bold">Efficiency</div>
-                    </h1>
-                </div>
-                <div class="img-container">
-                    <img class="hero-img" src="Assets/hero-img.webp" alt="">
-                    <div class="hero-btn-pos">
-                        <a href="Subpages/Store/store.html">
-                            <button class="btn hero-btn">
-                                Start typing
+            </section>
+            <div class="separator"></div>
+            <section class="section-rules">
+                <h1 class="section-title">About</h1>
+                <div class="grid-container about-content">
+                    <div>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum urna ac semper ornare. Pellentesque rutrum sodales leo nec fermentum. Morbi venenatis ornare condimentum. Proin viverra accumsan dictum. Duis eu nunc vitae orci ultrices vulputate vitae eu dolor. Vivamus feugiat neque quis augue egestas, at eleifend leo maximus. Curabitur id fermentum purus. Morbi lacus nisi, laoreet ac hendrerit sed, varius sed nisl. Donec faucibus quam eget volutpat finibus. Nunc imperdiet quam id felis pellentesque luctus. Sed vel leo ut ante consectetur consectetur vitae et nunc. In sed tortor eu magna consequat luctus. Donec commodo, leo sed consectetur vestibulum, urna odio scelerisque tellus, hendrerit facilisis turpis eros et lacus.
+                        </p>
+                        <p class="paragraph">
+                            Vivamus nec vestibulum lectus, sed sollicitudin neque. Cras a tellus vel est scelerisque rutrum. Aenean lectus lorem, fringilla eget lorem a, maximus placerat neque. Nulla rhoncus, tortor at tempor elementum, leo mi bibendum lorem, vel facilisis dui dui in massa. In ac posuere leo, vel dictum est. Morbi bibendum ultricies nisl vitae commodo. In facilisis fermentum maximus. Suspendisse gravida leo sed enim auctor pulvinar. Ut tortor dolor, volutpat lacinia fermentum eu, ultricies eu nibh. Nunc vulputate non nisi quis fermentum. Mauris aliquam dictum vulputate. Curabitur ac justo vel quam iaculis tristique. Maecenas dapibus sem est, eu gravida tortor congue quis.
+                        </p>
+                    </div>
+                    <div class="flex-container about-media">
+                        <img class="about-img" src="assets/about.webp" alt="Image related to about section">
+                        <a href="pages/about.html">
+                            <button class="btn about-btn">
+                                Read more
                             </button>
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="separator"></div>
-        <section class="about-section">
-            <div class="flex-container">
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, qui voluptatem ipsum corrupti consequuntur omnis ex quos commodi nostrum cupiditate quia temporibus.</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et reiciendis rerum consequatur a reprehenderit aliquid!</p>
-                    <a href="Subpages/About/about.html">
-                        <button class="btn about-btn">Read more</button>
+            </section>
+            <div class="separator"></div>
+            <section class="section-rules">
+                <h1 class="section-title">
+                    <a href="pages/blogs.html">
+                        Latest Blog
                     </a>
+                </h1>
+                <div class="grid-container blog-card">
+                    <a href="#">
+                        <img class="blog-img" src="assets/blog.webp" alt="Image related to blog">
+                    </a>
+                    <div class="blog-info">
+                        <h1 class="blog-title">Name of the blog post</h1>
+                        <span class="blog-date">30th of February 2024</span>
+                        <p class="blog-brief">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ratione cum nam.</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, qui voluptatem ipsum corrupti consequuntur omnis ex quos commodi nostrum cupiditate quia temporibus, recusandae et reiciendis rerum consequatur a reprehenderit aliquid!</p>
-                    <br>
-                    <img class="about-img" src="Assets/Showcased-kbs/corne-v3-kunai-raw-half.jpg" alt="">
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <div class="separator"></div>
-        <footer>
-            <div class="flex-container footer">
-                <nav class="flex-container">
-                    <div class="footer-item">
-                        <a href="Subpages/Contact/contact.html">Contact</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="Subpages/Privacy-policy/privacy.html">Privacy Policy</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
-                    </div>
-                </nav>
-                <div class="copyright">
-                    <div>© Mercurius Keyboards - All Rights Reserved<div>
-                </div>
-            </div>
+        <footer class="footer">
+
         </footer>
-        -->
     </body>
 </html>

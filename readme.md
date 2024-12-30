@@ -5,11 +5,14 @@ fonts:
 - Sans: Inter
 - Mono: JetBrains Mono
 
-TODO: Come uo with new colour scheme
 Colour scheme:
 - Black: #1c1817
-- White: #e6e6e6
-- Orange: #d95326
+- White: #e5e5e5
+- Orangy-Yellow: #ff8229
+- Blue: #043457
+
+Colour contrast: https://webaim.org/resources/contrastchecker/
+Accessible colours: https://digital.accessibility.princeton.edu/how/design
 
 Inspiration:
 - https://astro.build/
