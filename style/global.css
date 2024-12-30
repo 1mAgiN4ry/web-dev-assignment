@@ -19,8 +19,9 @@ body {
 .darkmode {
     --primary-color: #1c1817;
     --primary-variant-color: #e5e5e577;
-    --secondary-color: #e6e6e6;
+    --secondary-color: #e5e5e5;
     --accent-color: #ff8229;
+    --alt-text-color: #e5e5e5b0
 }
 
 /*-Global---------------------------------*/
@@ -35,6 +36,14 @@ body {
 .separator {
     height: 3px;
     background-color: var(--primary-variant-color);
+}
+
+.v-separator {
+    height: 100%;
+    width: 3px;
+    background-color: var(--primary-variant-color);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .btn {
@@ -54,14 +63,6 @@ body {
 
 .logo {
     height: 100%;
-}
-
-.v-separator {
-    height: 100%;
-    width: 3px;
-    background-color: var(--primary-variant-color);
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 /* Light/dark mode toggle button */
@@ -144,6 +145,12 @@ body {
 }
 
 /*-Footer---------------------------------*/
+.footer {
+    margin: 4vh;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
 
 /*-Responsive-functions-------------------*/
 /* Mobile */
@@ -231,5 +238,9 @@ body {
     .paragraph {
         font-size: 1.5rem;
         margin: 1.5rem;
+    }
+
+    .footer {
+        
     }
 }
