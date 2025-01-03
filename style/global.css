@@ -56,6 +56,11 @@ body {
     cursor: pointer;
 }
 
+.title-card {
+    font-size: 7rem;
+    text-align: center;
+}
+
 /*-Navigation-bar-------------------------*/
 .logo-container {
     height: 100%;
@@ -182,6 +187,10 @@ body {
         font-size: 1.5rem;
         margin: 1.75rem;
     }
+
+    .title-card {
+        padding: 1rem;
+    }
 }
 
 /* Tablet */
@@ -213,6 +222,10 @@ body {
         font-size: 1.5rem;
         margin: 1.5rem;
     }
+
+    .title-card {
+        padding: 1.5rem;
+    }
 }
 
 /* Desktop */
@@ -243,5 +256,9 @@ body {
     .paragraph {
         font-size: 1.5rem;
         margin: 1.5rem;
+    }
+
+    .title-card {
+        padding: 2rem;
     }
 }

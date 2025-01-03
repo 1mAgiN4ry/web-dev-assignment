@@ -20,7 +20,70 @@
 
         <!-- Embedded styles -->
         <style>
+            .about-info {
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .about-paragraph {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            /*-Responsive-functions-------------------*/
+            /* Mobile */
+            @media (min-width: 640px), (max-width: 640px) {
+                .about-info {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .about-paragraph {
+                    font-size: 1.25rem;
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                }
+
+                .about-info img {
+                    width: 70%;
+                }
+            }
+
+            /* Tablet */
+            @media (min-width: 960px ) {
+                .about-info {
+                    margin-top: 2.5rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                .about-paragraph {
+                    font-size: 1.3rem;
+                    margin-left: 15vw;
+                    margin-right: 15vw;
+                }
+
+                .about-info img {
+                    width: 60%;
+                }
+            }
+
+            /* Desktop */
+            @media (min-width: 1280px) {
+                .about-info {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
+
+                .about-paragraph {
+                    font-size: 1.5rem;
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                }
+
+                .about-info img {
+                    width: 50%;
+                }
+            }
         </style>
     </head>
     <body class="darkmode">
@@ -55,7 +118,22 @@
         </header>
         <div class="separator"></div>
         <main>
-
+            <div class="title-card">
+                <span>About</span>
+            </div>
+            <div class="separator"></div>
+            <section class="about-info flex-container">
+                <p class="about-paragraph">
+                    Aliquam erat volutpat. Curabitur auctor, ante vel egestas dictum, lacus sapien malesuada lorem, ut blandit nibh sem ac purus. Curabitur nec elit vitae diam faucibus iaculis. Praesent non ornare metus. Maecenas lorem erat, sagittis eu elementum sit amet, viverra eget purus. Nulla scelerisque venenatis magna, eu viverra massa egestas sit amet. Proin sagittis non velit a sagittis. Fusce tempor odio sit amet bibendum ultrices. In ultricies erat at metus gravida, ac consectetur leo blandit. Suspendisse enim nulla, pretium ac lacinia sit amet, egestas sed magna. Vivamus porta imperdiet magna id condimentum. Suspendisse molestie nibh sit amet felis lacinia ullamcorper ac a sem. Nulla vel sapien ac elit ullamcorper facilisis. Sed aliquam suscipit enim in pellentesque.
+                </p>
+                <img src="../assets/about.webp" alt="Image related to about section">
+                <p class="about-paragraph">
+                    Aenean scelerisque eros elit, ac malesuada eros accumsan ac. Cras rutrum sodales metus, sit amet pulvinar tellus ultricies ut. Mauris fermentum lacus vel blandit pretium. Quisque in ullamcorper enim. Vivamus euismod neque nec sem efficitur, a porttitor libero dignissim. Vestibulum consectetur vitae velit non volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra consectetur orci nec gravida. Praesent quis sapien faucibus, imperdiet dolor et, fermentum ipsum. Vestibulum rutrum tincidunt elit, vel pharetra dui finibus consequat. Cras semper est sit amet luctus laoreet. Aliquam eros ex, mattis a augue sed, rhoncus facilisis turpis. Curabitur nec vulputate purus, eu egestas risus. Proin vel elementum nisl. Integer quis nibh libero. Quisque pulvinar, erat et consequat consequat, sem ex venenatis quam, non aliquam lorem eros sit amet enim.
+                </p>
+                <p class="about-paragraph">
+                    Donec nec sapien diam. Vestibulum ullamcorper urna ut finibus cursus. Duis semper suscipit ex id volutpat. Cras convallis est sapien, non convallis nulla molestie ac. Morbi justo mi, posuere vel condimentum eleifend, laoreet a nisl. Fusce a erat malesuada, finibus turpis in, porttitor dui. Suspendisse quis lacus et nisi euismod eleifend. Ut cursus ullamcorper sollicitudin. Praesent semper purus vitae ultricies pellentesque. Ut commodo lorem ac nibh viverra laoreet. Vestibulum ipsum ipsum, finibus et neque ut, imperdiet cursus purus. Ut fringilla volutpat interdum. Sed sed mi urna. Proin in orci ultricies magna dictum elementum quis at mi. Sed quis auctor sem. Donec eget lectus eu eros malesuada laoreet.
+                </p>
+            </section>
         </main>
         <div class="separator"></div>
         <footer class="footer flex-container">
