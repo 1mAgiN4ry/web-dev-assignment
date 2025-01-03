@@ -20,7 +20,40 @@
 
         <!-- Embedded styles -->
         <style>
+            .blog {
+                flex-direction: column;
+            }
 
+            /*-Responsive-functions-------------------*/
+            /* Mobile */
+            @media (min-width: 640px), (max-width: 640px) {
+                .blog {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    margin-left: 10vh;
+                    margin-right: 10vh;
+                }
+            }
+
+            /* Tablet */
+            @media (min-width: 960px ) {
+                .blog {
+                    margin-top: 2.5rem;
+                    margin-bottom: 2.5rem;
+                    margin-left: 15vh;
+                    margin-right: 15vh;
+                }
+            }
+
+            /* Desktop */
+            @media (min-width: 1280px) {
+                .blog {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                    margin-left: 20vh;
+                    margin-right: 20vh;
+                }
+            }
         </style>
     </head>
     <body class="darkmode">
@@ -55,7 +88,60 @@
         </header>
         <div class="separator"></div>
         <main>
-
+            <div class="title-card">
+                <span>Blogs</span>
+            </div>
+            <div class="separator"></div>
+            <section class="flex-container blog">
+                <div class="grid-container blog-card">
+                    <div class="flex-container center">
+                        <a href="#">
+                            <img class="blog-img" src="../assets/blog.webp" alt="Image related to blog">
+                        </a>
+                    </div>
+                    <div class="blog-info flex-container">
+                        <h1 class="blog-title">Name of the blog post</h1>
+                        <span class="blog-date">30th of February 2024</span>
+                        <p class="blog-brief">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ratione cum nam.</p>
+                    </div>
+                </div>
+                <div class="grid-container blog-card">
+                    <div class="flex-container center">
+                        <a href="#">
+                            <img class="blog-img" src="../assets/blog.webp" alt="Image related to blog">
+                        </a>
+                    </div>
+                    <div class="blog-info flex-container">
+                        <h1 class="blog-title">Name of the blog post</h1>
+                        <span class="blog-date">30th of February 2024</span>
+                        <p class="blog-brief">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ratione cum nam.</p>
+                    </div>
+                </div>
+                <div class="grid-container blog-card">
+                    <div class="flex-container center">
+                        <a href="#">
+                            <img class="blog-img" src="../assets/blog.webp" alt="Image related to blog">
+                        </a>
+                    </div>
+                    <div class="blog-info flex-container">
+                        <h1 class="blog-title">Name of the blog post</h1>
+                        <span class="blog-date">30th of February 2024</span>
+                        <p class="blog-brief">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ratione cum nam.</p>
+                    </div>
+                </div>
+                <div class="grid-container blog-card">
+                    <div class="flex-container center">
+                        <a href="#">
+                            <img class="blog-img" src="../assets/blog.webp" alt="Image related to blog">
+                        </a>
+                    </div>
+                    <div class="blog-info flex-container">
+                        <h1 class="blog-title">Name of the blog post</h1>
+                        <span class="blog-date">30th of February 2024</span>
+                        <p class="blog-brief">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ratione cum nam.</p>
+                    </div>
+                </div>
+            </section>
         </main>
         <div class="separator"></div>
         <footer class="footer flex-container">
