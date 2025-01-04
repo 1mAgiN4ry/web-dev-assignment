@@ -56,6 +56,17 @@ body {
     cursor: pointer;
 }
 
+.btn:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.btn:active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
 .title-card {
     font-size: 7rem;
     text-align: center;

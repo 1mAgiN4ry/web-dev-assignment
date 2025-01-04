@@ -20,7 +20,97 @@
 
         <!-- Embedded styles -->
         <style>
+            .products {
+                gap: 2rem;
+            }
 
+            .product-card {
+                border: var(--primary-variant-color) solid 4px;
+            }
+
+            .product-img {
+                width: 100%;
+            }
+
+            .product-info {
+                margin-top: 1.5rem;
+                justify-content: center;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .product-name {
+                font-size: 2rem;
+                font-weight: 500;
+                overflow: wrap;
+                margin-bottom: 0.75rem;
+            }
+
+            .filter-checkout-bar {
+                justify-content: space-between;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            @media (min-width: 640px), (max-width: 640px) {
+                .products {
+                    grid-template-columns: 1fr;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                }
+
+                .filter-checkout-bar {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .shrink, .filter-checkout-bar {
+                    margin-left: 8vw;
+                    margin-right: 8vw;
+                }
+            }
+
+            @media (min-width: 960px) {
+                .products {
+                    grid-template-columns: 1fr 1fr;
+                    margin-top: 2.5rem;
+                    margin-bottom: 2.5rem;
+                    margin-left: 15vw;
+                    margin-right: 15vw;
+                }
+
+                .filter-checkout-bar {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .shrink, .filter-checkout-bar {
+                    margin-left: 13vw;
+                    margin-right: 13vw;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                .products {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                    margin-left: 17vw;
+                    margin-right: 17vw;
+                }
+
+                .filter-checkout-bar {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .shrink, .filter-checkout-bar {
+                    margin-left: 15vw;
+                    margin-right: 15vw;
+                }
+            }
         </style>
     </head>
     <body class="darkmode">
@@ -55,7 +145,95 @@
         </header>
         <div class="separator"></div>
         <main>
-
+            <div class="title-card">
+                <span>Products</span>
+            </div>
+            <div class="separator"></div>
+            <section class="filter-checkout-bar flex-container">
+                <button class="btn">
+                    Filters
+                </button>
+                <a href="checkout.html">
+                    <button class="btn">
+                        Checkout
+                    </button>
+                </a>
+            </section>
+            <div class="separator shrink"></div>
+            <section class="grid-container products">
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/product-keyboard.webp" alt="Image of keyboard sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Keyboard</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/pcb.webp" alt="Image of keyboard PCB sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Keyboard PCB</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/case.webp" alt="Image of keyboard case sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Keyboard Case</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/keycaps.webp" alt="Image of keycaps sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Keyboard</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of linear key switch sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Linear Key Switch</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of tactile key switch sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Tactile Key Switch</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of clicky key switch sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Clicky Key Switch</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="products/template.html">
+                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of silent key switch sold">
+                    </a>
+                    <div class="product-info flex-container">
+                        <span class="product-name">Silent Key Switch</span>
+                        <span class="product-price">$69.99</span>
+                    </div>
+                </div>
+            </section>
         </main>
         <div class="separator"></div>
         <footer class="footer flex-container">
