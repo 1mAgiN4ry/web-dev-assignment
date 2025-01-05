@@ -17,6 +17,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="../../style/reset.css">
         <link rel="stylesheet" href="../../style/global.css">
+        <link rel="stylesheet" href="../../style/product-detail.css">
 
         <!-- Embedded styles -->
         <style>
@@ -55,7 +56,35 @@
         </header>
         <div class="separator"></div>
         <main>
-
+            <section class="product-detail grid-container">
+                <img class="product-img" src="../../assets/product-keyboard.webp" alt="Image of the product: Keyboard">
+                <div class="product-info flex-container">
+                    <h1 class="product-name">Product Name</h1>
+                    <h2 class="product-price">$69.99</h2>
+                    <h3 class="product-rating">Rating: 4.6/5</h2>
+                    <div class="quantity-section">
+                        <h2 class="quantity-title">Quantity</h2>
+                        <div class="inputs">
+                            <button class="btn quantity-change">-</button>
+                            <input class="product-quantity" type="number" name="quantity" id="quantity" autocomplete="off" value="1">
+                            <button class="btn quantity-change">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn cart-btn">Add to Cart</button>
+                        <button class="btn buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <section class="description">
+                <h1 class="description-title">Lorem Ipsum</h1>
+                <p class="description-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat nulla vitae lorem gravida imperdiet. In quis libero id odio aliquam aliquam eu sit amet turpis. Donec eu ante commodo, ornare tortor nec, tincidunt mauris. Nunc commodo tempor tellus, scelerisque semper odio viverra sit amet. Nulla eleifend nisl consectetur metus porttitor placerat. Sed aliquam nec lectus in elementum. Praesent in diam non urna vehicula laoreet ut id orci. Fusce ullamcorper finibus sapien, vel vestibulum enim efficitur at. Nunc sed finibus lectus. Maecenas nec eleifend dui, eget facilisis felis. Duis non augue et nunc luctus dignissim. Nam tincidunt ante id nibh fermentum, a vehicula nibh scelerisque. Nullam libero justo, tincidunt non quam malesuada, efficitur consequat elit. In hac habitasse platea dictumst. Ut eu eleifend nibh, eget tincidunt nulla. Maecenas laoreet eros dui, vitae sollicitudin lorem pellentesque at.
+                </p>
+                <p class="description-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut pharetra mi. Pellentesque nec purus turpis. Sed ante ex, tristique vel mattis quis, commodo ut nisi. Vestibulum non dapibus neque. Donec mi nisi, consectetur vitae enim vitae, ornare consequat turpis. Maecenas faucibus elit neque, sed elementum ipsum ullamcorper eu. Nulla sit amet enim libero. Nullam magna est, tristique ac bibendum eu, pharetra non ipsum. Fusce sodales, magna vel blandit ultricies, lacus nunc efficitur leo, ac semper neque ante vel lacus. Morbi vitae lorem vel tellus efficitur porttitor vitae at eros. Integer eget euismod sapien. Suspendisse potenti. Vestibulum cursus ipsum leo, a auctor est ultrices id. Nunc consequat neque sed tellus euismod, id viverra justo viverra. Duis egestas maximus elit, eu dapibus risus finibus at. Vivamus sapien mi, luctus id ligula sit amet, placerat luctus nibh. 
+                </p>
+            </section>
         </main>
         <div class="separator"></div>
         <footer class="footer flex-container">

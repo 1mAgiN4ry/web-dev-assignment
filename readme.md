@@ -33,6 +33,7 @@ Inspiration:
 - https://dygma.com/
 - https://ergodox-ez.com/
 - https://www.hhkeyboard.com/uk/
+- https://cannonkeys.com/
 
 Ideas:
 - Console input and typing animation on hero title and subtitle
