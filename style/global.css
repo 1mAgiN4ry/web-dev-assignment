@@ -18,9 +18,11 @@ body {
 
 .darkmode {
     --primary-color: #1c1817;
+    --primary-transparent: #1c1817cc;
     --primary-variant-color: #e5e5e577;
     --secondary-color: #e5e5e5;
     --accent-color: #ff8229;
+    --alt-accent-color: #ff822980;
     --alt-text-color: #e5e5e5b0
 }
 

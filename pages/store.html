@@ -26,6 +26,39 @@
 
             .product-card {
                 border: var(--primary-variant-color) solid 4px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .card-hover {
+                height: 100%;
+                width: 100%;
+                background-color: var(--alt-accent-color);
+                position: absolute;
+                z-index: 10;
+                justify-content: space-evenly;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+
+            .product-card:hover .card-hover,
+            .product-card:active .card-hover {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .card-hover .btn {
+                background-color: var(--primary-transparent);
+            }
+
+            .card-hover .btn:hover {
+                background-color: var(--secondary-color);
+            }
+
+            .card-hover .btn:active {
+                background-color: var(--primary-transparent);
             }
 
             .product-img {
@@ -162,72 +195,104 @@
             <div class="separator shrink"></div>
             <section class="grid-container products">
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/product-keyboard.webp" alt="Image of keyboard sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/product-keyboard.webp" alt="Image of keyboard sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Keyboard</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/pcb.webp" alt="Image of keyboard PCB sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/pcb.webp" alt="Image of keyboard PCB sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Keyboard PCB</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/case.webp" alt="Image of keyboard case sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/case.webp" alt="Image of keyboard case sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Keyboard Case</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/keycaps.webp" alt="Image of keycaps sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/keycaps.webp" alt="Image of keycaps sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Keyboard</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of linear key switch sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/key-switch.webp" alt="Image of linear key switch sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Linear Key Switch</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of tactile key switch sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/key-switch.webp" alt="Image of tactile key switch sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Tactile Key Switch</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of clicky key switch sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/key-switch.webp" alt="Image of clicky key switch sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Clicky Key Switch</span>
                         <span class="product-price">$69.99</span>
                     </div>
                 </div>
                 <div class="product-card">
-                    <a href="products/template.html">
-                        <img class="product-img" src="../assets/key-switch.webp" alt="Image of silent key switch sold">
-                    </a>
+                    <div class="card-hover flex-container">
+                        <a href="products/template.html">
+                            <button class="btn">View</button>
+                        </a>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                    <img class="product-img" src="../assets/key-switch.webp" alt="Image of silent key switch sold">
                     <div class="product-info flex-container">
                         <span class="product-name">Silent Key Switch</span>
                         <span class="product-price">$69.99</span>
