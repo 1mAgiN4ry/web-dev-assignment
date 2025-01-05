@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tab decoration -->
+        <title>Mercurius Keyboards</title>
+        <link rel="shortcut icon" href="../assets/mercurius-favicon.png" type="image/x-icon">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../style/reset.css">
+        <link rel="stylesheet" href="../style/global.css">
+
+        <!-- Embedded styles -->
+        <style>
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 0.75rem;
+            }
+
+            input {
+                font-family: "Inter", sans-serif;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                background-color: var(--primary-color);
+                outline: none;
+                border: none;
+                border: var(--secondary-color) solid 3px;
+                width: 100%;
+                height: 3.5rem;
+                box-sizing: border-box;
+                display: inline-flex;
+                padding: 1rem;
+            }
+
+            input:focus {
+                border: var(--accent-color) solid 3px;
+            }
+
+            textarea {
+                font-family: "Inter", sans-serif;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                background-color: var(--primary-color);
+                outline: none;
+                border: none;
+                border: var(--secondary-color) solid 3px;
+                width: 100%;
+                height: 15rem;
+                box-sizing: border-box;
+                display: inline-flex;
+                padding: 1rem;
+                resize: vertical;
+            }
+
+            textarea:focus {
+                border: var(--accent-color) solid 3px;
+            }
+
+            .contact-form {
+                flex-direction: column;
+            }
+
+            form div {
+                margin: 1.5rem;
+            }
+
+            /*-Responsive-functions-------------------*/
+            /* Mobile */
+            @media (min-width: 640px), (max-width: 640px) {
+                .contact-form {
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                }
+            }
+
+            /* Tablet */
+            @media (min-width: 960px ) {
+                .contact-form {
+                    margin-left: 15vw;
+                    margin-right: 15vw;
+                }
+            }
+
+            /* Desktop */
+            @media (min-width: 1280px) {
+                .contact-form {
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                }
+            }
+        </style>
+    </head>
+    <body class="darkmode">
+        <header>
+            <div class="navbar">
+                <div class=" flex-container logo-container" style="float: left;">
+                    <a href="../index.html">
+                        <img class="logo" src="assets/logo-darkmode.webp" alt="Logo of the website">
+                    </a>
+                    <div class="v-separator"></div>
+                    <button class="light-dark-toggle">
+                        <img src="../assets/moon.webp" alt="Moon icon denoting dark mode">
+                        <img src="../assets/sun.webp" alt="Sun icon denoting light mode">
+                    </button>
+                </div>
+                <nav class="flex-container nav-menu" style="float: right;">
+                    <a class="underline nav-item" href="store.html">Products</a>
+                    <a class="underline nav-item" href="about.html">About</a>
+                    <a class="underline nav-item" href="blogs.html">Blog</a>
+                </nav>
+                <div class="dropdown-container" style="float: right;">
+                    <button class="dropdown-btn">
+                        <img class="dropdown-btn-img" src="../assets/hamburger-darkmode.webp" alt="Dropdown menu button">
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pages/store.html">Products</a>
+                        <a href="pages/about.html">About</a>
+                        <a href="pages/blogs.html">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="separator"></div>
+        <main>
+            <div class="title-card">
+                <span>Contact</span>
+            </div>
+            <div class="separator"></div>
+            <form action="" class="flex-container contact-form">
+                <div>
+                    <h1 class="email-title">Email:</h1>
+                    <input type="email" name="" id="" placeholder="example@email.com">
+                </div>
+                <div>
+                    <h1>Subject:</h1>
+                    <input type="text" name="" id="" placeholder="Enter message subject">
+                </div>
+                <div>
+                    <h1>Message:</h1>
+                    <textarea name="" id="" placeholder="Enter message"></textarea>
+                </div>
+            </form>
+        </main>
+        <div class="separator"></div>
+        <footer class="footer flex-container">
+            <span class="footer-logo">©Mercurius Keyboards</span>
+            <div class="footer-info">
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
+            </div>
+        </footer>
+    </body>
 </html>
