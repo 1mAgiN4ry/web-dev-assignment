@@ -20,7 +20,83 @@
 
         <!-- Embedded styles -->
         <style>
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 1rem;
+            }
 
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 0.75rem;
+            }
+
+            input[type=text], input[type=number], input[type=email] {
+                font-family: "Inter", sans-serif;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                background-color: var(--primary-color);
+                outline: none;
+                border: none;
+                border: var(--secondary-color) solid 3px;
+                width: 100%;
+                height: 3.5rem;
+                box-sizing: border-box;
+                display: inline;
+                padding: 1rem;
+            }
+
+            input:focus {
+                border: var(--accent-color) solid 3px;
+            }
+
+            form {
+                margin-top: 3rem;
+            }
+
+            .fullname div {
+                width: 100%;
+            }
+
+            .form-element {
+                margin: 1.5rem;
+            }
+
+            .location-section {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .btn {
+                margin: 1.5rem;
+            }
+
+            /*-Responsive-functions-------------------*/
+            /* Mobile */
+            @media (min-width: 640px), (max-width: 640px) {
+                form {
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                }
+            }
+
+            /* Tablet */
+            @media (min-width: 960px ) {
+                form {
+                    margin-left: 15vw;
+                    margin-right: 15vw;
+                }
+            }
+
+            /* Desktop */
+            @media (min-width: 1280px) {
+                form {
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                }
+            }
         </style>
     </head>
     <body class="darkmode">
@@ -55,7 +131,72 @@
         </header>
         <div class="separator"></div>
         <main>
-
+            <div class="title-card">
+                Checkout
+            </div>
+            <div class="separator"></div>
+            <form>
+                <div>
+                    <h1>Contact info</h1>
+                    <div class="flex-container fullname">
+                        <div class="form-element">
+                            <h2>First name</h2>
+                            <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-element">
+                            <h2>Last name</h2>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <h2>Email address</h2>
+                        <input type="email" name="email-address" id="email-address" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div>
+                    <h1>Location</h1>
+                    <div class="grid-container location-section">
+                        <div>
+                            <div class="form-element">
+                                <h2>Address line 1</h2>
+                                <input type="text" name="address-line-1" id="address-line-1" placeholder="Enter your house number and street name" required>
+                            </div>
+                            <div class="form-element">
+                                <h2>Address line 2</h2>
+                                <input type="text" name="address-line-2" id="address-line-2" placeholder="Enter additional address detail">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-element">
+                                <h2>City</h2>
+                                <input type="text" name="city" id="city" placeholder="Enter your city name" required>
+                            </div>
+                            <div class="form-element">
+                                <h2>Postcode</h2>
+                                <input type="text" name="postcode" id="postcode" placeholder="Enter your postcode" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div>
+                    <h1>Billing</h1>
+                    <div class="form-element">
+                        <h2>Sort code</h2>
+                        <input type="number" name="sort-code" id="sort-code" placeholder="Enter your bank sort code" required>
+                    </div>
+                    <div class="form-element">
+                        <h2>Account number</h2>
+                        <input type="number" name="account-number" id="account-number" placeholder="Enter your bank account number" required>
+                    </div>
+                    <div class="form-element">
+                        <h2>CVV2</h2>
+                        <input type="number" name="cvv2" id="cvv2" placeholder="Enter your CVV2" required>
+                    </div>
+                </div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
         </main>
         <div class="separator"></div>
         <footer class="footer flex-container">
