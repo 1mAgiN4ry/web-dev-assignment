@@ -26,7 +26,7 @@
                 margin-bottom: 0.75rem;
             }
 
-            input {
+            input[type=text], input[type=number], input[type=email] {
                 font-family: "Inter", sans-serif;
                 line-height: 1;
                 font-weight: 500;
@@ -43,7 +43,7 @@
                 padding: 1rem;
             }
 
-            input:focus {
+            input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
                 border: var(--accent-color) solid 3px;
             }
 
@@ -69,18 +69,18 @@
                 border: var(--accent-color) solid 3px;
             }
 
-            .contact-form {
-                flex-direction: column;
+            .form-element {
+                margin: 1.5rem;
             }
 
-            form div {
-                margin: 1.5rem;
+            .contact-form {
+                flex-direction: column;
             }
 
             /*-Responsive-functions-------------------*/
             /* Mobile */
             @media (min-width: 640px), (max-width: 640px) {
-                .contact-form {
+                form {
                     margin-left: 10vw;
                     margin-right: 10vw;
                 }
@@ -88,7 +88,7 @@
 
             /* Tablet */
             @media (min-width: 960px ) {
-                .contact-form {
+                form {
                     margin-left: 15vw;
                     margin-right: 15vw;
                 }
@@ -96,7 +96,7 @@
 
             /* Desktop */
             @media (min-width: 1280px) {
-                .contact-form {
+                form {
                     margin-left: 20vw;
                     margin-right: 20vw;
                 }
@@ -139,19 +139,22 @@
                 <span>Contact</span>
             </div>
             <div class="separator"></div>
-            <form action="" class="flex-container contact-form">
-                <div>
-                    <h1 class="email-title">Email:</h1>
-                    <input type="email" name="" id="" placeholder="example@email.com">
+            <form>
+                <div class="flex-container contact-form">
+                    <div class="form-element">
+                        <h1 class="email-title">Email:</h1>
+                        <input type="email" name="email-address" id="email-address" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-element">
+                        <h1>Subject:</h1>
+                        <input type="text" name="subject" id="subject" placeholder="Enter message subject" required>
+                    </div>
+                    <div class="form-element">
+                        <h1>Message:</h1>
+                        <textarea name="message" id="message" placeholder="Enter message" required></textarea>
+                    </div>
                 </div>
-                <div>
-                    <h1>Subject:</h1>
-                    <input type="text" name="" id="" placeholder="Enter message subject">
-                </div>
-                <div>
-                    <h1>Message:</h1>
-                    <textarea name="" id="" placeholder="Enter message"></textarea>
-                </div>
+                <input class="btn form-element" type="submit" value="Submit">
             </form>
         </main>
         <div class="separator"></div>
