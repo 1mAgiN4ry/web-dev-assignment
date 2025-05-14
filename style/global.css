@@ -14,16 +14,41 @@ body {
     --primary-variant-color: #1c1817aa;
     --secondary-color: #1c1817;
     --accent-color: #043457;
+    --alt-accent-color: #04345780;
+    --alt-text-color: #e5e5e5b0
 }
 
 .darkmode {
     --primary-color: #1c1817;
-    --primary-transparent: #1c1817cc;
     --primary-variant-color: #e5e5e577;
     --secondary-color: #e5e5e5;
     --accent-color: #ff8229;
     --alt-accent-color: #ff822980;
     --alt-text-color: #e5e5e5b0
+}
+
+#logo-light {
+    display: none;
+}
+
+#theme-btn-light {
+    display: none;
+}
+
+#hamburger-light {
+    display: none;
+}
+
+#logo-dark {
+    display: inline-block;
+}
+
+#theme-btn-dark {
+    display: inline-block;
+}
+
+#hamburger-dark {
+    display: inline-block;
 }
 
 /*-Global---------------------------------*/
@@ -69,6 +94,22 @@ body {
     background-color: var(--primary-color);
 }
 
+.alt-btn {
+    color: var(--accent-color);
+    border: var(--accent-color) solid 3px;
+}
+
+.alt-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.alt-btn:active {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
 .title-card {
     font-size: 7rem;
     text-align: center;
@@ -91,10 +132,6 @@ body {
 
 .light-dark-toggle img{
     height: 100%;
-}
-
-.light-dark-toggle img:first-child {
-    display: none;
 }
 
 .light-dark-toggle:hover {
@@ -149,9 +186,9 @@ body {
 }
 
 .dropdown-menu {
-    display: none;
     position: absolute;
     right: 0;
+    margin-top: 4rem;
     background-color: var(--primary-color);
     border: solid 2px var(--secondary-color);
     z-index: 1;
@@ -203,6 +240,41 @@ body {
 .blog-card .v-separator {
     width: 4px;
     flex-shrink: 0;
+}
+
+/*-Form-overlay---------------------------*/
+.confirmation-screen {
+    background-color: #00000088;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pop-up {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 3px;
+    width: 30rem;
+    height: 15rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pop-up-text {
+    font-size: 3rem;
+}
+
+.pop-up-btn {
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 /*-Responsive-functions-------------------*/

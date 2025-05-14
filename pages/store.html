@@ -151,12 +151,13 @@
             <div class="navbar">
                 <div class=" flex-container logo-container" style="float: left;">
                     <a href="../index.html">
-                        <img class="logo" src="../assets/logo-darkmode.webp" alt="Go to landing page">
+                        <img id="logo-dark" class="logo" src="../assets/logo-darkmode.webp" alt="Go to landing page">
+                        <img id="logo-light" class="logo" src="../assets/logo-lightmode.webp" alt="Go to landing page">
                     </a>
                     <div class="v-separator"></div>
                     <button class="light-dark-toggle">
-                        <img src="../assets/moon.webp" alt="Switch to dark mode">
-                        <img src="../assets/sun.webp" alt="Switch to light mode">
+                        <img id="theme-btn-dark" src="../assets/moon.webp" alt="Switch to dark mode">
+                        <img id="theme-btn-light" src="../assets/sun.webp" alt="Switch to light mode">
                     </button>
                 </div>
                 <nav class="flex-container nav-menu" style="float: right;">
@@ -165,10 +166,11 @@
                     <a class="underline nav-item" href="blogs.html">Blog</a>
                 </nav>
                 <div class="dropdown-container" style="float: right;">
-                    <button class="dropdown-btn">
-                        <img class="dropdown-btn-img" src="../assets/hamburger-darkmode.webp" alt="Open navigation menu">
+                    <button id="dropdown-btn" class="dropdown-btn">
+                        <img id="hamburger-light" class="dropdown-btn-img" src="../assets/hamburger-darkmode.webp" alt="Open navigation menu">
+                        <img id="hamburger-dark" class="dropdown-btn-img" src="../assets/hamburger-lightmode.webp" alt="Open navigation menu">
                     </button>
-                    <div class="dropdown-menu">
+                    <div id="dropdown-menu" class="dropdown-menu" style="display: none;">
                         <a href="store.html">Products</a>
                         <a href="about.html">About</a>
                         <a href="blogs.html">Blog</a>
@@ -307,4 +309,6 @@
             </div>
         </footer>
     </body>
+    <script src="../scripts/theme_toggle.js"></script>
+    <script src="../scripts/hamburger_menu.js"></script>
 </html>

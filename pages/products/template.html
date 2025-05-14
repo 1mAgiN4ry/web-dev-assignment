@@ -29,12 +29,13 @@
             <div class="navbar">
                 <div class=" flex-container logo-container" style="float: left;">
                     <a href="../../index.html">
-                        <img class="logo" src="../../assets/logo-darkmode.webp" alt="Go to landing page">
+                        <img id="logo-dark" class="logo" src="../../assets/logo-darkmode.webp" alt="Go to landing page">
+                        <img id="logo-light" class="logo" src="../../assets/logo-lightmode.webp" alt="Go to landing page">
                     </a>
                     <div class="v-separator"></div>
                     <button class="light-dark-toggle">
-                        <img src="../../assets/moon.webp" alt="Switch to dark mode">
-                        <img src="../../assets/sun.webp" alt="Switch to light mode">
+                        <img id="theme-btn-light" src="../../assets/moon.webp" alt="Switch to dark mode">
+                        <img id="theme-btn-dark" src="../../assets/sun.webp" alt="Switch to light mode">
                     </button>
                 </div>
                 <nav class="flex-container nav-menu" style="float: right;">
@@ -43,13 +44,14 @@
                     <a class="underline nav-item" href="../blogs.html">Blog</a>
                 </nav>
                 <div class="dropdown-container" style="float: right;">
-                    <button class="dropdown-btn">
-                        <img class="dropdown-btn-img" src="../../assets/hamburger-darkmode.webp" alt="Open navigation menu">
+                    <button id="dropdown-btn" class="dropdown-btn">
+                        <img id="hamburger-dark" class="dropdown-btn-img" src="../../assets/hamburger-darkmode.webp" alt="Open navigation menu">
+                        <img id="hamburger-light" class="dropdown-btn-img" src="../../assets/hamburger-lightmode.webp" alt="Open navigation menu">
                     </button>
-                    <div class="dropdown-menu">
-                        <a href="store.html">Products</a>
-                        <a href="about.html">About</a>
-                        <a href="blogs.html">Blog</a>
+                    <div id="dropdown-menu" class="dropdown-menu" style="display: none;">
+                        <a href="../store.html">Products</a>
+                        <a href="../about.html">About</a>
+                        <a href="../blogs.html">Blog</a>
                     </div>
                 </div>
             </div>
@@ -57,17 +59,32 @@
         <div class="separator"></div>
         <main>
             <section class="product-detail grid-container">
-                <img class="product-img" src="../../assets/product-keyboard.webp" alt="Image of the product: Keyboard">
-                <div class="product-info flex-container">
+                <div class="product-img flex-container" style="align-items: center;">
+                    <button id="back" class="btn"><</button>
+                    <div id="images">
+                        <img class="product-img" src="../../assets/product-keyboard.webp" alt="Image of the product: Keyboard">
+                        <img class="product-img" src="../../assets/one.webp" alt="Image of the product: Keyboard">
+                        <img class="product-img" src="../../assets/two.webp" alt="Image of the product: Keyboard">
+                    </div>
+                    <button id="forward" class="btn">></button>
+                </div>
+                <div class="product-info flex-container" style="margin-left: 2rem;">
                     <h1 class="product-name">Product Name</h1>
-                    <h2 class="product-price">$69.99</h2>
+                    <h2 class="product-price">$<span id="price">69.99</span></h2>
                     <h2 class="product-rating">Rating: 4.6/5</h2>
                     <div class="quantity-section">
                         <h2 class="quantity-title">Quantity</h2>
                         <div class="inputs">
-                            <button class="btn quantity-change">-</button>
-                            <input class="product-quantity" type="number" name="quantity" id="quantity" autocomplete="off" value="1">
-                            <button class="btn quantity-change">+</button>
+                            <button id="quantity-decrement" class="btn quantity-change">-</button>
+                            <input id="quantity" class="product-quantity" type="number" name="quantity" id="quantity" autocomplete="off" value="1">
+                            <button id="quantity-increment" class="btn quantity-change">+</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="quantity-title">Variations</h2>
+                        <div class="inputs">
+                            <button id="black-ver" class="btn alt-btn">Black</button>
+                            <button id="white-ver" class="btn">White</button>
                         </div>
                     </div>
                     <div>
@@ -95,4 +112,8 @@
             </div>
         </footer>
     </body>
+    <script src="../../scripts/theme_toggle.js"></script>
+    <script src="../../scripts/hamburger_menu.js"></script>
+    <script src="../../scripts/image_carousel.js"></script>
+    <script src="../../scripts/product_variation.js"></script>
 </html>
