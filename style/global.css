@@ -270,6 +270,7 @@ body {
 
 .pop-up-text {
     font-size: 3rem;
+    display: none;
 }
 
 .pop-up-btn {

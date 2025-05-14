@@ -96,16 +96,16 @@
         </style>
     </head>
     <body class="darkmode">
-        <header>
-            <div id="confirmation-screen" class="flex-container confirmation-screen">
-                <div class="flex-container pop-up">
-                    <p class="flex-container pop-up-text">Are you sure?</p>
-                    <div class="flex-container pop-up-btn">
-                        <input id="confirm" class="btn" type="button" value="Confirm">
-                        <input id="cancel" class="btn" type="button" value="Cancel">
-                    </div>
+        <div id="confirmation-screen" class="flex-container confirmation-screen">
+            <div class="flex-container pop-up">
+                <p id="pop-up-text" class="flex-container pop-up-text" style="display: none;">Are you sure?</p>
+                <div class="flex-container pop-up-btn">
+                    <input id="confirm" class="btn" type="button" value="Confirm" style="display: none;">
+                    <input id="cancel" class="btn" type="button" value="Cancel" style="display: none;">
                 </div>
             </div>
+        </div>
+        <header>
             <div class="navbar">
                 <div class=" flex-container logo-container" style="float: left;">
                     <a href="../index.html">
@@ -213,8 +213,8 @@
                 <a href="https://github.com/1mAgiN4ry/web-dev-assignment">Github</a>
             </div>
         </footer>
+        <script src="../scripts/theme_toggle.js"></script>
+        <script src="../scripts/hamburger_menu.js"></script>
+        <script type="module" src="../scripts/checkout_validation.js"></script>
     </body>
-    <script src="../scripts/theme_toggle.js"></script>
-    <script src="../scripts/hamburger_menu.js"></script>
-    <script type="module" src="../scripts/checkout_validation.js"></script>
 </html>
